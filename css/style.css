@@ -1,0 +1,155 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-violeta {
+  background-color: rgb(84, 31, 133);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+
+}
+
+.hero-img {
+  width: 80%;
+  position: relative;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-img span {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(148, 77, 214);
+  border-radius: 100%;
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+  z-index: 1;
+}
+
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-content a, .boton {
+  padding: 15px;
+  background-color: rgb(148, 77, 214);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 150px;
+  text-align: center;
+}
+
+/* carousel */
+
+.carousel-inner,
+.carousel-item {
+  height: 700px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto {
+  width: 100%;
+  background-color: rgb(148, 77, 214);
+  overflow-x: hidden;
+  border-radius: 5px;
+}
+
+.producto img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: 0.5s;
+
+}
+
+.producto-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  color: white;
+  transition: 0.5s;
+}
+
+.producto-content a {
+  padding: 15px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.producto:hover img {
+  width: 600px;
+}
+
+.producto:hover {
+  background-color: rgb(56, 19, 90);
+}
+
+.producto-content a:hover {
+  background-color: rgb(148, 77, 214);
+}
+
+/* about */
+
+.about{
+  height: 600px;
+  background: url('../images/gif.gif');
+  background-size: cover;
+  padding: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.about div{
+  width: 70%;
+  text-align: center;
+}
+
+.footer-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+
+@media (max-width:768px){
+  .hero{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-img{
+    display: none;
+  }
+}
