@@ -1,4 +1,4 @@
-## Instalacion de SASS global
+## Instalacion de SASS global  | ***Unica vez por pc***
 ```bash
    npm install -g sass
 
