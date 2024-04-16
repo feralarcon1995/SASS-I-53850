@@ -1,0 +1,38 @@
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+
+  a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 10px * 2;
+    transition: 0.4s;
+    background-color: $secondary-color;
+    color: $main-color;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    &:hover {
+      background-color: $main-color;
+      color: $secondary-color;
+      border: 1px solid $secondary-color;
+      box-shadow: 5px 5px 5px $main-color;
+    }
+
+    &:nth-child(2) {
+      background-color: $main-color;
+      color: $secondary-color;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $main-color;
+        border: 1px solid $main-color;
+        box-shadow: 5px 5px 5px $secondary-color;
+      }
+    }
+  }
+}
